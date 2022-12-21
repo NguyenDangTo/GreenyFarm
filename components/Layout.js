@@ -56,17 +56,17 @@ export default function Layout({title, children}) {
               {/* Category */}
               <Link href="/search?category=fresh-food" passHref>
                 <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
-                  Fresh Food
+                  🍎 Fresh Food
                 </div>
               </Link>
               <Link href="/search?category=vegetables" passHref>
                 <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
-                  Vegetables
+                  🥕 Vegetables
                 </div>
               </Link>
               <Link href="/search?category=dry-food" passHref>
                 <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
-                  Dry Food
+                  🌾 Dry Food
                 </div>
               </Link>
             </div>
