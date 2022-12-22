@@ -55,17 +55,26 @@ export default function Layout({title, children}) {
               <div className="text-4xl mb-8 font-bold text-lime-400">Categories</div>
               {/* Category */}
               <Link href="/search?category=fresh-food" passHref>
-                <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
+                <div
+                  className="cursor-pointer hover:text-emerald-400 ease-in duration-100 "
+                  onClick={() => setShowCategories(!showCategories)}
+                >
                   🍎 Fresh Food
                 </div>
               </Link>
               <Link href="/search?category=vegetables" passHref>
-                <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
+                <div
+                  className="cursor-pointer hover:text-emerald-400 ease-in duration-100 "
+                  onClick={() => setShowCategories(!showCategories)}
+                >
                   🥕 Vegetables
                 </div>
               </Link>
               <Link href="/search?category=dry-food" passHref>
-                <div className="cursor-pointer hover:text-emerald-400 ease-in duration-100 ">
+                <div
+                  className="cursor-pointer hover:text-emerald-400 ease-in duration-100 "
+                  onClick={() => setShowCategories(!showCategories)}
+                >
                   🌾 Dry Food
                 </div>
               </Link>

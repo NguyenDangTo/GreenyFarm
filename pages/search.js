@@ -13,16 +13,16 @@ const PAGE_SIZE = 2;
 
 const prices = [
   {
-    name: "$1 to $50",
-    value: "1-50",
+    name: "$1 to $20",
+    value: "1-20",
   },
   {
-    name: "$51 to $200",
-    value: "51-200",
+    name: "$21 to $100",
+    value: "21-100",
   },
   {
-    name: "$201 to $1000",
-    value: "201-1000",
+    name: "$101 and above",
+    value: "101-9999",
   },
 ];
 
@@ -234,7 +234,6 @@ export async function getServerSideProps({query}) {
           },
         }
       : {};
-  // 10-50
   const priceFilter =
     price && price !== "all"
       ? {
