@@ -54,12 +54,12 @@ export default function Layout({title, children}) {
             <div className="flex flex-col justify-center align-center text-white text-2xl gap-4 text-center">
               <div className="text-4xl mb-8 font-bold text-lime-400">Categories</div>
               {/* Category */}
-              <Link href="/search?category=fresh-food" passHref>
+              <Link href="/search?category=meat" passHref>
                 <div
                   className="cursor-pointer hover:text-emerald-400 ease-in duration-100 "
                   onClick={() => setShowCategories(!showCategories)}
                 >
-                  🍎 Fresh Food
+                  🥩 Meat
                 </div>
               </Link>
               <Link href="/search?category=vegetables" passHref>
