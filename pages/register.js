@@ -122,7 +122,7 @@ export default function LoginScreen() {
         </div>
         <div className="mb-4 ">
           Already have an account? &nbsp;
-          <Link href={`/login`}>Register</Link>
+          <Link href={`/login`}>Login</Link>
         </div>
       </form>
     </Layout>
